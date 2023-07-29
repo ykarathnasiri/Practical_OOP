@@ -1,0 +1,27 @@
+1)
+1. With public static final keywords, the variable is implicitly considered constant
+(unchangeable). Without these keywords, the variable can be changed by the
+implementing class. The former ensures constant value throughout the
+implementation
+public interface MyFirstInterface
+{
+ int x = 10;.
+}
+2. With the abstract keyword, the method must be implemented by the subclass.
+Without it, the subclass can optionally override the method. The former enforces
+implementation, while the latter allows flexibility.
+public interface MyFirstInterface
+{
+ int x = 10;
+ void display();
+}
+3. It's not possible to change the value of 'x' inside the implementing class. Interface
+variables are implicitly public static final, making them constants, and their values
+cannot be modified after declaration.
+public class InterfaceImplemented implements MyFirstInterface
+{
+ @Override
+ public void display()
+ {
+ x = 20;
+ System.ou

@@ -1,0 +1,3 @@
+The final keyword is used to prevent a method from being overridden by a subclass.
+In the code you provided, the display() method is declared as final. This means that the display() method cannot be overridden by a subclass.
+Because the display() method is final, the code will not compile.
